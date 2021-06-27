@@ -1,0 +1,11 @@
+fft_sitodp_64ns_64_6_no_dsp_1
+regslice_core
+regslice_core
+fft_fifo_w128_d2_S
+fft_fifo_w1_d64_S
+fft_start_for_unpackComplex_U0
+fft_control_s_axi
+regslice_core
+packComplex
+unpackComplex
+fft

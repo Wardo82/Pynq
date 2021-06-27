@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Sun Jun 27 17:46:00 2021
+# Process ID: 26835
+# Current directory: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip/vivado.log
+# Journal file: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

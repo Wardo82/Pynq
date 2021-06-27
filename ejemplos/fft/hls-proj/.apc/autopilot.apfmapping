@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft.cpp" path="/home/wardo/Documents/repos/Pynq/ejemplos/fft/fft.cpp"/>
+    <originFiles name="fft.h" path="/home/wardo/Documents/repos/Pynq/ejemplos/fft/fft.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fft_tb.cpp" path="/home/wardo/Documents/repos/Pynq/ejemplos/fft/fft_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

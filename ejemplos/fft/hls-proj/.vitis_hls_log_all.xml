@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-656] Deadlocks can occur since process packComplex is instantiated in a dataflow region with ap_ctrl_none or without start propagation and contains a non-flushable pipeline." projectName="hls-proj" solutionName="solution1" date="2021-06-27T17:41:20.660+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="hls-proj" solutionName="solution1" date="2021-06-27T17:41:20.607+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'unpackComplex' consists of the following:&#x9;fifo read on port 'dst' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) [17]  (3.63 ns)&#xA;&#x9;'sub' operation ('sh_amt') [29]  (1.55 ns)&#xA;&#x9;'icmp' operation ('icmp_ln329') [34]  (1.99 ns)&#xA;&#x9;blocking operation 15.8 ns on control path)&#xA;&#xA;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1016.html" projectName="hls-proj" solutionName="solution1" date="2021-06-27T17:41:19.962+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (23.0172ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-871.html" projectName="hls-proj" solutionName="solution1" date="2021-06-27T17:41:19.959+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:62) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma." projectName="hls-proj" solutionName="solution1" date="2021-06-27T17:41:18.471+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

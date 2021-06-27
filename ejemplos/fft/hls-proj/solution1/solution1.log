@@ -1,0 +1,564 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+ERROR: [HLS 207-3345] no viable overloaded '=': ./fft.h:21:11
+INFO: [HLS 207-4395] candidate function (the implicit copy assignment operator) not viable: no known conversion from 'ap_range_ref<128, true>' to 'const qdma_axis<64, 0, 0, 0>' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h:131:10
+ERROR: [HLS 207-3345] no viable overloaded '=': ./fft.h:22:11
+INFO: [HLS 207-4395] candidate function (the implicit copy assignment operator) not viable: no known conversion from 'ap_range_ref<128, true>' to 'const qdma_axis<64, 0, 0, 0>' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h:131:10
+ERROR: [HLS 207-3339] no matching conversion for functional-style cast from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_int<DWIDTH>': fft.cpp:35:18
+INFO: [HLS 207-4395] candidate constructor (the implicit copy constructor) not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'const ap_int<64>' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:63:8
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'bool' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:156:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:157:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'signed char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:158:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:159:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'short' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:160:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned short' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:161:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'int' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:162:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned int' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:163:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'long' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:164:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned long' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:165:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_slong' (aka 'long long') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:166:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_ulong' (aka 'unsigned long long') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:167:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'double' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:169:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'float' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:170:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'half' (aka '__fp16') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:171:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'const char *' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:174:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:68:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:73:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_uint' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:78:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_uint' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:83:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:98:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_bit_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:101:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_concat_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:104:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:109:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_ufixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:114:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:120:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_ufixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:126:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:132:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'af_bit_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:138:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'af_range_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:144:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed_base' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:150:41
+INFO: [HLS 207-4390] candidate constructor not viable: requires 0 arguments, but 1 was provided: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:66:41
+INFO: [HLS 207-4390] candidate constructor not viable: requires 2 arguments, but 1 was provided: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:90:41
+INFO: [HLS 207-4390] candidate constructor not viable: requires 2 arguments, but 1 was provided: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:176:41
+ERROR: [HLS 207-3339] no matching conversion for functional-style cast from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_int<DWIDTH>': fft.cpp:36:18
+INFO: [HLS 207-4395] candidate constructor (the implicit copy constructor) not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'const ap_int<64>' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:63:8
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'bool' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:156:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:157:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'signed char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:158:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned char' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:159:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'short' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:160:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned short' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:161:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'int' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:162:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned int' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:163:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'long' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:164:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'unsigned long' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:165:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_slong' (aka 'long long') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:166:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'ap_ulong' (aka 'unsigned long long') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:167:41
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'double' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:169:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'float' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:170:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'half' (aka '__fp16') for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:171:3
+INFO: [HLS 207-4395] candidate constructor not viable: no known conversion from 'custom_number' (aka 'qdma_axis<DWIDTH, 0, 0, 0>') to 'const char *' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:174:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:68:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:73:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_uint' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:78:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_uint' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:83:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:98:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_bit_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:101:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_concat_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:104:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:109:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_ufixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:114:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:120:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_ufixed' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:126:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:132:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'af_bit_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:138:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'af_range_ref' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:144:41
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_fixed_base' against 'qdma_axis': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:150:41
+INFO: [HLS 207-4390] candidate constructor not viable: requires 0 arguments, but 1 was provided: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:66:41
+INFO: [HLS 207-4390] candidate constructor not viable: requires 2 arguments, but 1 was provided: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h:90:41
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+WARNING: [HLS 207-5106] parentheses were disambiguated as a function declaration: fft.cpp:11:19
+INFO: [HLS 207-4102] add a pair of parentheses to declare a variable: fft.cpp:11:20
+ERROR: [HLS 207-3719] invalid operands to binary expression ('hls::stream<complex>' and 'complex (*)(ap_int<DWIDTH>, ap_int<DWIDTH>)'): fft.cpp:12:9
+INFO: [HLS 207-4395] candidate function not viable: no known conversion from 'complex (ap_int<DWIDTH>, ap_int<DWIDTH>)' to 'const complex' for 1st argument: /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:128:48
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1498:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1499:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1500:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1501:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1502:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1503:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1522:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1523:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1524:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1525:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1526:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1527:142
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1690:174
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1690:491
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_int_base' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1799:168
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_bit_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_base.h:1799:472
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1140:2361
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1140:2639
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1141:2514
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1141:2810
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1142:2400
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1142:2683
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1143:2433
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1143:2720
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1144:2573
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1144:2876
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1145:2662
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1145:2976
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1146:2523
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1146:2820
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1147:2612
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1147:2920
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1148:2548
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1148:2848
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref' against 'stream': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1149:2637
+INFO: [HLS 207-4423] candidate template ignored: could not match 'ap_range_ref<_AP_W, _AP_S>' against 'complex (ap_int<64>, ap_int<64>)': /home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:1149:2948
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:30:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:45:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:44:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:63:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:64:20)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 16031 ; free virtual = 24588
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 16031 ; free virtual = 24588
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15974 ; free virtual = 24541
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15895 ; free virtual = 24467
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:0) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:63) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15797 ; free virtual = 24376
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15742 ; free virtual = 24336
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 19.77 seconds; current allocated memory: 386.850 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 387.034 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+WARNING: [HLS 207-1584] missing argument for 'variable': fft.cpp:66:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:30:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:45:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:44:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:63:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:64:20)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15984 ; free virtual = 24546
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15984 ; free virtual = 24546
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15924 ; free virtual = 24497
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15846 ; free virtual = 24424
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:0) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:63) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15744 ; free virtual = 24332
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15689 ; free virtual = 24290
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 23.17 seconds; current allocated memory: 386.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 387.060 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:30:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:45:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:44:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:63:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:64:20)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15939 ; free virtual = 24513
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15939 ; free virtual = 24513
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15880 ; free virtual = 24466
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15804 ; free virtual = 24392
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:0) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:63) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15705 ; free virtual = 24303
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15655 ; free virtual = 24263
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.24 seconds; current allocated memory: 386.850 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 387.034 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:30:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:45:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:44:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:63:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:67:23)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15860 ; free virtual = 24439
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15860 ; free virtual = 24439
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15798 ; free virtual = 24387
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15717 ; free virtual = 24312
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:0) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:67) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15620 ; free virtual = 24222
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15570 ; free virtual = 24182
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.35 seconds; current allocated memory: 386.857 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 387.040 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:32:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:49:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:48:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:67:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:68:20)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15792 ; free virtual = 24384
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15792 ; free virtual = 24384
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15726 ; free virtual = 24332
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15636 ; free virtual = 24249
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_31_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:0) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:67) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15521 ; free virtual = 24143
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15468 ; free virtual = 24104
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20 seconds; current allocated memory: 411.573 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 411.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/fft.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-10] Analyzing design file 'fft.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::write(complex const&)' into 'hls::stream<complex, 0>::operator<<(complex const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::write(bool const&)' into 'hls::stream<bool, 0>::operator<<(bool const&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:9:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::read()' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:18:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator<<(bool const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:14:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator<<(complex const&)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:12:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::read(bool&)' into 'hls::stream<bool, 0>::operator>>(bool&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::read(complex&)' into 'hls::stream<complex, 0>::operator>>(complex&)' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::operator>>(bool&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:32:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:44:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::operator>>(complex&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:34:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<qdma_axis<64, 0, 0, 0>, 0>::write(qdma_axis<64, 0, 0, 0> const&)' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:43:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<complex, 0>::stream(char const*)' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:62:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<bool, 0>::stream()' into 'fft(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, ap_int<32>)' (fft.cpp:63:20)
+INFO: [HLS 214-178] Inlining function 'complex::complex(ap_int<64>, ap_int<64>)' into 'packComplex(hls::stream<complex, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<bool, 0>&)' (fft.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'complex::complex()' into 'unpackComplex(hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<qdma_axis<64, 0, 0, 0>, 0>&, hls::stream<complex, 0>&, hls::stream<bool, 0>&)' (fft.cpp:26:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15776 ; free virtual = 24367
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15776 ; free virtual = 24367
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15710 ; free virtual = 24313
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15621 ; free virtual = 24230
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_8_1' (/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) in function 'packComplex' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_31_1' (fft.cpp:48) in function 'unpackComplex' automatically.
+WARNING: [HLS 200-805] An internal stream 'complex_stream' (fft.cpp:62) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'fft', detected/extracted 2 process function(s): 
+	 'packComplex'
+	 'unpackComplex'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15505 ; free virtual = 24124
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.945 ; gain = 1227.801 ; free physical = 15442 ; free virtual = 24086
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.14 seconds; current allocated memory: 411.504 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 411.688 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'unpackComplex' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [HLS 200-871] Estimated clock period (23.0172ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

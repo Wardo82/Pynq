@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1624808480000">
+  <ports id="1" name="dst" type="PortType" originalName="dst" coreName="FIFO_SRL" bitwidth="128" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="eos" type="PortType" originalName="eos" coreName="FIFO_SRL" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="real_V_data_V" type="PortType" originalName="real" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="real_V_keep_V" type="PortType" originalName="real" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="real_V_last_V" type="PortType" originalName="real" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="imag_V_data_V" type="PortType" originalName="imag" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="imag_V_keep_V" type="PortType" originalName="imag" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="imag_V_last_V" type="PortType" originalName="imag" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="36" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="39" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="40" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="41" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="45" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="46" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.0"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="63" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="66" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlOutputObjs>bb</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln8" lineNumber="8" fileName="fft.cpp" fileDirectory=".." contextFuncName="packComplex" opcode="br" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="fft.cpp" linenumber="8" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="packComplex"/>
+      <controlInputObjs>bb</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="fft.cpp">
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name="block_35" type="BlockType">
+    <controlInputObjs>bb</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="eos_write_ln167" lineNumber="167" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="write" opcode="write" nodeLabel="8.0" m_display="0" m_delay="3.65" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="167" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="write"/>
+      <dataOutputObjs>eos</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln21" lineNumber="21" fileName="fft.cpp" fileDirectory=".." contextFuncName="packComplex" opcode="ret" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="fft.cpp" linenumber="21" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="packComplex"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="fft.cpp">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>167</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="119" pipe_depth="7" RegionName="VITIS_LOOP_8_1">
+    <basic_blocks id="28" name="bb" type="BlockType">
+      <controlInputObjs>block_14</controlInputObjs>
+      <controlInputObjs>block_32</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_35</controlOutputObjs>
+      <controlOutputObjs>block_32</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="empty" lineNumber="626" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." contextFuncName="read" bitwidth="73" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="626" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="read"/>
+        <dataInputObjs>real_V_data_V</dataInputObjs>
+        <dataInputObjs>real_V_keep_V</dataInputObjs>
+        <dataInputObjs>real_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp_data_V" lineNumber="626" originalName="tmp.data.V" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." contextFuncName="read" bitwidth="64" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="626" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sitodp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_last_V" lineNumber="626" originalName="tmp.last.V" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." contextFuncName="read" bitwidth="1" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="626" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="empty_20" lineNumber="626" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." contextFuncName="read" bitwidth="73" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="626" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="read"/>
+        <dataInputObjs>imag_V_data_V</dataInputObjs>
+        <dataInputObjs>imag_V_keep_V</dataInputObjs>
+        <dataInputObjs>imag_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_data_V_3" lineNumber="626" originalName="tmp.data.V" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." contextFuncName="read" bitwidth="64" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h" linenumber="626" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sitodp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="a_temp_real" lineNumber="26" originalName="a_temp.real" fileName="./fft.h" fileDirectory=".." rtlName="sitodp_64ns_64_6_no_dsp_1_U1" contextFuncName="complex" bitwidth="64" opcode="sitodp" nodeLabel="1.0" nodeLatency="5" m_display="0" m_delay="6.28" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./fft.h" linenumber="26" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="complex"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="a_temp_imag" lineNumber="27" originalName="a_temp.imag" fileName="./fft.h" fileDirectory=".." rtlName="sitodp_64ns_64_6_no_dsp_1_U2" contextFuncName="complex" bitwidth="64" opcode="sitodp" nodeLabel="1.0" nodeLatency="5" m_display="0" m_delay="6.28" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./fft.h" linenumber="27" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="complex"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="A_0_cast_i" lineNumber="26" fileName="./fft.h" fileDirectory=".." rtlName="A_0_cast_i_fu_108_p1" contextFuncName="complex" bitwidth="64" opcode="bitcast" nodeLabel="7.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./fft.h" linenumber="26" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="complex"/>
+        <dataInputObjs>sitodp</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="A_1_cast_i" lineNumber="27" fileName="./fft.h" fileDirectory=".." rtlName="A_1_cast_i_fu_111_p1" contextFuncName="complex" bitwidth="64" opcode="bitcast" nodeLabel="7.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./fft.h" linenumber="27" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="complex"/>
+        <dataInputObjs>sitodp</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp_s" lineNumber="27" fileName="./fft.h" fileDirectory=".." rtlName="dst_din" contextFuncName="complex" bitwidth="128" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./fft.h" linenumber="27" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="complex"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="dst_write_ln167" lineNumber="167" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="write" opcode="write" nodeLabel="7.0" m_display="0" m_delay="3.63" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="167" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>dst</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln13" lineNumber="13" fileName="fft.cpp" fileDirectory=".." contextFuncName="packComplex" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fft.cpp" linenumber="13" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="packComplex"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <controlInputObjs>block_32</controlInputObjs>
+        <controlInputObjs>block_35</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./fft.h">
+        <validLinenumbers>26</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="fft.cpp">
+        <validLinenumbers>13</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_axi_sdata.h">
+        <validLinenumbers>626</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>167</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="32" name="block_32" type="BlockType">
+      <controlInputObjs>bb</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>bb</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="eos_write_ln167" lineNumber="167" fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="3.65" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h" linenumber="167" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="write"/>
+        <dataOutputObjs>eos</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln20" lineNumber="20" fileName="fft.cpp" fileDirectory=".." contextFuncName="packComplex" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="fft.cpp" linenumber="20" fileDirectory="/home/wardo/Documents/repos/Pynq/ejemplos/fft" functionName="packComplex"/>
+        <controlInputObjs>bb</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="fft.cpp">
+        <validLinenumbers>20</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/home/wardo/Documents/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>167</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <regnodes realName="a_temp_imag_reg_142">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_last_V_reg_128">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_3_reg_132">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="a_temp_real_reg_137">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_reg_123">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_data_V_fu_94">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_1_cast_i_fu_111">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_3_fu_103">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_last_V_fu_99">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="A_0_cast_i_fu_108">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_114">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_91">
+    <nodeIds>22</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_88">
+    <nodeIds>21</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln167_write_fu_80">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_72">
+    <nodeIds>30</nodeIds>
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_52">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_20_read_fu_62">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioPorts name="dst">
+    <contents name="write">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="eos">
+    <contents name="write">
+      <nodeIds>33</nodeIds>
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="imag_V_data_V">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="imag_V_keep_V">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="imag_V_last_V">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_V_data_V">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_V_keep_V">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_V_last_V">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="6" latency="6"/>
+      <operations id="22" stage="6" latency="6"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="5" latency="6"/>
+      <operations id="22" stage="5" latency="6"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="21" stage="4" latency="6"/>
+      <operations id="22" stage="4" latency="6"/>
+    </states>
+    <states id="5">
+      <operations id="21" stage="3" latency="6"/>
+      <operations id="22" stage="3" latency="6"/>
+    </states>
+    <states id="6">
+      <operations id="21" stage="2" latency="6"/>
+      <operations id="22" stage="2" latency="6"/>
+    </states>
+    <states id="7">
+      <operations id="21" stage="1" latency="6"/>
+      <operations id="22" stage="1" latency="6"/>
+    </states>
+    <states id="8">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="packComplex" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>14</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_8_1" mII="1" mDepth="7" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>28</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>35</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

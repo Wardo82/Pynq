@@ -1,0 +1,12 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="fft" language="c" hwCtrl="ap_ctrl_none" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="real_in" src_type="stream&lt;qdma_axis&lt;64, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1" hw_interface="AXI-Stream" hw_name="real_in" hw_bitwidth="128" hw_size_or_depth="1"/>
+      <arg id="1" access_type="r" src_name="imag_in" src_type="stream&lt;qdma_axis&lt;64, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1" hw_interface="AXI-Stream" hw_name="imag_in" hw_bitwidth="128" hw_size_or_depth="1"/>
+      <arg id="2" access_type="w" src_name="real_out" src_type="stream&lt;qdma_axis&lt;64, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1" hw_interface="AXI-Stream" hw_name="real_out" hw_bitwidth="128" hw_size_or_depth="1"/>
+      <arg id="3" access_type="w" src_name="imag_out" src_type="stream&lt;qdma_axis&lt;64, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="128" src_size_or_depth="1" hw_interface="AXI-Stream" hw_name="imag_out" hw_bitwidth="128" hw_size_or_depth="1"/>
+      <arg id="4" access_type="r" src_name="size" src_type="ap_int&lt;32&gt;" src_isptr="0" src_bitwidth="32" src_size_or_depth="1" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="32" hw_size_or_depth="1"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

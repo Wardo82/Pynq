@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:21 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Sun Jun 27 17:46:00 2021
+# Process ID: 26835
+# Current directory: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip/vivado.log
+# Journal file: /home/wardo/Documents/repos/Pynq/ejemplos/fft/hls-proj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wardo/Documents/Xilinx/Vivado/2020.1/data/ip'.
+create_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2056.008 ; gain = 42.863 ; free physical = 14824 ; free virtual = 24199
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft_ap_sitodp_4_no_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft_ap_sitodp_4_no_dsp_64'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wardo/Documents/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 27 17:46:52 2021...
